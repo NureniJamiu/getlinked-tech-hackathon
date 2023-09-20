@@ -10,7 +10,7 @@ const Navbar = () => {
     { title: "Contact", url: "#" },
   ];
   return (
-    <nav className="px-10 md:px-20 lg:px-36 py-5 border-b border-zinc-700 mx-auto">
+    <nav className="px-10 md:px-20 lg:px-28 py-5 border-b border-zinc-700 mx-auto">
       <div className="flex items-center justify-between">
         <Link href="/" className=" font-clash text-xl md:text-2xl">
           get<span className=" text-purple-600 ">linked</span>

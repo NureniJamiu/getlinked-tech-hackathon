@@ -8,13 +8,12 @@ import lamp from "../../public/hero-lamp.png";
 import whiteStar from "../../public/star-white.png";
 import grayStar from "../../public/star-gray.png";
 import Star from "./Star";
-// import { Star } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="h-[calc(100vh-85px)] md:pl-36 border-b border-zinc-700 overflow-y-hidden">
+    <section className="h-[calc(100vh-85px)] md:pl-28 border-b border-zinc-700 overflow-y-hidden">
       <div className="flex flex-col md:flex-row md:items-center">
-        <div className="md:flex-1 text-center md:text-left ">
+        <div className="md:flex-1 text-center md:text-left">
           <div className="relative my-5 md:hidden">
             <span className="italic font-semibold ">
               Igniting a Revolution in HR Innovation
@@ -28,7 +27,7 @@ const Hero = () => {
             />
           </div>
 
-          <div className="relative my-16">
+          <div className="relative my-16 md:my-0">
             {/* add blur effect  */}
 
             <Star
@@ -52,9 +51,9 @@ const Hero = () => {
                 alt="idea lamp"
                 width={50}
                 height={50}
-                className="hidden md:block absolute -top-12 right-60"
+                className="hidden md:block  absolute -top-12 right-60"
               />
-              <span className="text-4xl font-clash md:text-[70px] md:leading-tight">
+              <span className="text-4xl font-clash md:text-5xl md:leading-tight">
                 getlinked Tech Hackathon 1.0🔗💥
               </span>
             </div>
@@ -63,6 +62,7 @@ const Hero = () => {
               win a Big prize
             </p>
 
+            {/* right-hand div  */}
             <div className="relative">
               <Button className="btn-gradient rounded px-12 py-6 my-6">
                 Register
@@ -83,16 +83,16 @@ const Hero = () => {
           </div>
         </div>
         <div className="relative md:flex-1">
-          <div className="hidden md:block relative my-5 md:my-10 ml-4 ">
-            <span className="italic font-semibold text-3xl">
+          <div className="hidden md:block relative my-5 md:my-2 md:ml-4 ">
+            <span className="italic font-semibold text-2xl">
               Igniting a Revolution in HR Innovation
             </span>
             <Image
               src={line}
               alt="line"
-              width={210}
-              height={210}
-              className="absolute -bottom-4 right-32"
+              width={180}
+              height={180}
+              className="absolute -bottom-4 right-24"
             />
           </div>
           <Image src={heroImage} alt="hackathon guy" full className="" />
