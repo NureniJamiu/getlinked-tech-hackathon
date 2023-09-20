@@ -9,7 +9,6 @@ import Rewards from "@/components/Rewards";
 import Rules from "@/components/Rules";
 import TheBigIdea from "@/components/TheBigIdea";
 import Timeline from "@/components/Timeline";
-import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (

@@ -32,6 +32,7 @@ module.exports = {
       },
       fontFamily: {
         clash: ["var(--font-clash-display)"],
+        unica: ["var(--font-unica-one)"],
       },
     },
   },
