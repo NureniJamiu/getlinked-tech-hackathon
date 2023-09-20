@@ -62,7 +62,6 @@ const Hero = () => {
               win a Big prize
             </p>
 
-            {/* right-hand div  */}
             <div className="relative">
               <Button className="btn-gradient rounded px-12 py-6 my-6">
                 Register
@@ -82,6 +81,8 @@ const Hero = () => {
             </p>
           </div>
         </div>
+
+        {/* right-hand div  */}
         <div className="relative md:flex-1">
           <div className="hidden md:block relative my-5 md:my-2 md:ml-4 ">
             <span className="italic font-semibold text-2xl">
