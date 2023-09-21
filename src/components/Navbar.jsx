@@ -24,7 +24,7 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between">
         <Link href="/" className=" font-clash text-xl md:text-2xl">
-          get<span className=" text-purple-600 ">linked</span>
+          get<span className=" text-[#D434FE] ">linked</span>
         </Link>
 
         <div className="flex items-center justify-between md:gap-12 lg:gap-36">
