@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} ${clash_display.variable} ${unica_one.variable} bg-[#150E28] text-[#fff] max-w-7xl mx-auto`}
+        className={`${montserrat.className} ${clash_display.variable} ${unica_one.variable} bg-[#150E28] text-[#fff] max-w-7xl mx-auto overflow-x-hidden`}
       >
         {children}
       </body>
