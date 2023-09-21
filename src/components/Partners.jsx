@@ -5,7 +5,7 @@ import sponsors from "../../public/partners.png";
 
 const Partners = () => {
   return (
-    <section className=" px-10 md:px-20 lg:px-28 py-12">
+    <section className=" px-10 md:px-20 lg:px-28 py-20 border-b border-zinc-700">
       <div
         className="md:w-[480px] text-center md:h-auto mx-auto"
         data-aos="fade-up"
