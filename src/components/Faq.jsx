@@ -14,8 +14,8 @@ import Image from "next/image";
 
 const Faq = () => {
   return (
-    <section className="px-10 md:px-20 lg:px-28 py-12 overflow-x-hidden">
-      <div className="flex flex-col md:flex-row md:items-center gap-12">
+    <section className="px-10 md:px-20 lg:px-28 py-12 border-b border-zinc-700">
+      <div className="flex flex-col md:flex-row md:items-center gap-5 md:gap-12 text-center md:text-left">
         <div className="flex-1">
           <div>
             <Subheader
@@ -32,46 +32,48 @@ const Faq = () => {
               getlinked Hackathon 1.0
             </p>
           </div>
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem
-              value="item-1"
-              data-aos="fade-up-right"
-              data-aos-duration="1500"
-            >
-              <AccordionTrigger>
-                Can I submit a project I started before the Hackathon?
-              </AccordionTrigger>
-              <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem
-              value="item-2"
-              data-aos="fade-up-right"
-              data-aos-duration="1500"
-            >
-              <AccordionTrigger>
-                What happens if I need help during the Hackathon?
-              </AccordionTrigger>
-              <AccordionContent>
-                Yes. It comes with default styles that matches the other
-                components&apos; aesthetic.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem
-              value="item-3"
-              data-aos="fade-up-right"
-              data-aos-duration="1500"
-            >
-              <AccordionTrigger>
-                What happens if I don{"'"}t have an idea for a project?
-              </AccordionTrigger>
-              <AccordionContent>
-                Yes. It&apos;s animated by default, but you can disable it if
-                you prefer.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+          <div>
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem
+                value="item-1"
+                data-aos="fade-up-right"
+                data-aos-duration="1500"
+              >
+                <AccordionTrigger>
+                  Can I submit a project I started before the Hackathon?
+                </AccordionTrigger>
+                <AccordionContent>
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem
+                value="item-2"
+                data-aos="fade-up-right"
+                data-aos-duration="1500"
+              >
+                <AccordionTrigger>
+                  What happens if I need help during the Hackathon?
+                </AccordionTrigger>
+                <AccordionContent>
+                  Yes. It comes with default styles that matches the other
+                  components&apos; aesthetic.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem
+                value="item-3"
+                data-aos="fade-up-right"
+                data-aos-duration="1500"
+              >
+                <AccordionTrigger>
+                  What happens if I don{"'"}t have an idea for a project?
+                </AccordionTrigger>
+                <AccordionContent>
+                  Yes. It&apos;s animated by default, but you can disable it if
+                  you prefer.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
         </div>
 
         <div
