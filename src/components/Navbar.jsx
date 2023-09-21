@@ -11,7 +11,7 @@ const Navbar = () => {
   ];
   return (
     <nav
-      className="px-10 md:px-20 lg:px-28 py-5 border-b border-zinc-700 mx-auto"
+      className="px-10 md:px-20 lg:px-28 py-5 md:py-3 border-b border-zinc-700 mx-auto"
       data-aos="fade-down"
       data-aos-duration="1000"
     >
@@ -23,11 +23,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between md:gap-12 lg:gap-36">
           <div className="hidden md:flex gap-8">
             {links.map((_, index) => (
-              <Link
-                key={index}
-                href={_.url}
-                // className="gradient-text gradient-text-hover"
-              >
+              <Link key={index} href={_.url} className="text-sm">
                 {_.title}
               </Link>
             ))}
