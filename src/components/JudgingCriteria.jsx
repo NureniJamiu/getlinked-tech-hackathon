@@ -26,7 +26,7 @@ const JudgingCriteria = () => {
     },
   ];
   return (
-    <section className="text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 py-8">
+    <section className="text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 py-8 overflow-x-hidden">
       <div className="flex flex-col md:flex-row md:items-center gap-8 md:16">
         <div
           className="md:flex-1 relative"
