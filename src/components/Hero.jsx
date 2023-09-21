@@ -11,7 +11,11 @@ import Star from "./Star";
 
 const Hero = () => {
   return (
-    <section className="h-[calc(100vh-85px)] md:pl-28 border-b border-zinc-700 overflow-y-hidden">
+    <section
+      className="h-[calc(100vh-85px)] md:pl-28 border-b border-zinc-700 overflow-y-hidden"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div className="flex flex-col md:flex-row md:items-center">
         <div className="md:flex-1 text-center md:text-left">
           <div className="relative my-5 md:hidden">

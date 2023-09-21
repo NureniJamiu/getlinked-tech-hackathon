@@ -5,12 +5,17 @@ import sectionImage from "../../public/the-big-idea.png";
 import curlyArrow from "../../public/curly-arrow.png";
 import purpleStar from "../../public/star-purple-light.png";
 import Subheader from "./Subheader";
+import { Button } from "./ui/button";
 
 const TheBigIdea = () => {
   return (
     <section className="text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 py-8">
       <div className="flex flex-col md:flex-row md:items-center gap-16">
-        <div className="md:flex-1 relative">
+        <div
+          className="md:flex-1 relative"
+          data-aos="fade-up-right"
+          data-aos-duration="1500"
+        >
           <Image
             src={sectionImage}
             alt="The Big Idea"
@@ -37,8 +42,9 @@ const TheBigIdea = () => {
           <Subheader
             title="Introduction to getlinked"
             subtitle="techHackathon 1.0"
+            animateDirection="left"
           />
-          <p className="my-5">
+          <p className="my-5" data-aos="fade-up-left" data-aos-duration="1500">
             Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you{"'"}re a coding
             genius, a design maverick, or a concept wizard, you{"'"}ll have the

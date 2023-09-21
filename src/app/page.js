@@ -1,3 +1,5 @@
+"use client";
+
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -10,7 +12,14 @@ import Rules from "@/components/Rules";
 import TheBigIdea from "@/components/TheBigIdea";
 import Timeline from "@/components/Timeline";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       <Navbar />

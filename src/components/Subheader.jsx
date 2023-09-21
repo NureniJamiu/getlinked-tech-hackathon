@@ -3,9 +3,13 @@ import React from "react";
 
 import purpleStar from "../../public/star-purple-light.png";
 
-const Subheader = ({ title, subtitle }) => {
+const Subheader = ({ title, subtitle, animateDirection }) => {
   return (
-    <h2 className="relative font-clash text-2xl md:text-3xl">
+    <h2
+      className="relative font-clash text-2xl md:text-3xl"
+      data-aos={`fade-down-${animateDirection}`}
+      data-aos-duration="1500"
+    >
       {title} <br />
       <span className="text-[#D434FE]">{subtitle}</span>
       <Image

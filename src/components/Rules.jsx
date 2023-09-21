@@ -9,7 +9,11 @@ const Rules = () => {
   return (
     <section className="text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 py-8">
       <div className="flex flex-col md:flex-row-reverse md:items-center gap-8 md:16">
-        <div className="md:flex-1 relative">
+        <div
+          className="md:flex-1 relative"
+          data-aos="fade-up-left"
+          data-aos-duration="1500"
+        >
           <Image src={lady} alt="The Big Idea" width={500} height={500} />
           <Image
             src={whiteStar}
@@ -22,8 +26,12 @@ const Rules = () => {
         </div>
 
         <div className="md:flex-1 text-center md:text-left">
-          <Subheader title="Rules and" subtitle="Guidelines" />
-          <p className="my-5">
+          <Subheader
+            title="Rules and"
+            subtitle="Guidelines"
+            animateDirection="right"
+          />
+          <p className="my-5" data-aos="fade-up-right" data-aos-duration="1500">
             Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you{"'"}re a coding
             genius, a design maverick, or a concept wizard, you{"'"}ll have the
