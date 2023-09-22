@@ -7,12 +7,20 @@ import heroImage from "../../public/hero.png";
 import lamp from "../../public/hero-lamp.png";
 import whiteStar from "../../public/star-white.png";
 import grayStar from "../../public/star-gray.png";
+import flare from "../../public/purple-flare.png";
 import Star from "./Star";
 
 const Hero = () => {
   return (
-    <section className="h-[calc(100vh-85px)] md:pl-28 border-b border-zinc-700 overflow-y-hidden">
+    <section className="relative h-[calc(100vh-85px)] md:pl-28 border-b border-zinc-700 overflow-y-hidden">
       <div className="flex flex-col md:flex-row md:items-center">
+        <Image
+          src={flare}
+          alt="flare"
+          width={600}
+          height={600}
+          className="absolute -top-8 -right-8"
+        />
         <div
           className="md:flex-1 text-center md:text-left"
           data-aos="fade-right"
@@ -22,6 +30,7 @@ const Hero = () => {
             <span className="italic font-semibold ">
               Igniting a Revolution in HR Innovation
             </span>
+
             <Image
               src={line}
               alt="line"

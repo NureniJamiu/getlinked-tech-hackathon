@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import menu from "../../public/Vector.png";
+import flare from "../../public/purple-flare.png";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -20,10 +21,17 @@ const Navbar = () => {
   const handleToggle = () => setToggle(!toggle);
   return (
     <nav
-      className="px-10 md:px-20 lg:px-28 py-5 md:py-3 border-b border-zinc-700 mx-auto"
+      className="relative px-10 md:px-20 lg:px-28 py-5 md:py-3 border-b border-zinc-700 mx-auto"
       data-aos="fade-down"
       data-aos-duration="1000"
     >
+      <Image
+        src={flare}
+        alt="flare"
+        width={600}
+        height={600}
+        className="absolute -top-4 left-8"
+      />
       <div className="flex items-center justify-between">
         <Link href="/" className=" font-clash text-xl md:text-2xl">
           get<span className=" text-[#D434FE] ">linked</span>
