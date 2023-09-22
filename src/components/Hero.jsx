@@ -16,7 +16,7 @@ const Hero = () => {
         <div
           className="md:flex-1 text-center md:text-left"
           data-aos="fade-right"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
         >
           <div className="relative my-5 md:hidden">
             <span className="italic font-semibold ">
@@ -90,7 +90,7 @@ const Hero = () => {
         <div
           className="relative md:flex-1"
           data-aos="fade-left"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
         >
           <div className="hidden md:block relative my-5 md:my-2 md:ml-4 ">
             <span className="italic font-semibold text-2xl">

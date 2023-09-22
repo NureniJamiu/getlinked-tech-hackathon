@@ -6,7 +6,7 @@ const page = () => {
     <main className="flex items-center justify-center px-12 md:px-22 lg:px-44 h-[calc(100vh-66px)]">
       <div className="flex flex-col  md:flex-row md:items-center gap-72">
         {/* flex one */}
-        <div className="flex-1">
+        <div className="flex-1" data-aos="fade-right" data-aos-duration="1500">
           <h2 className="text-2xl font-clash text-[#D434FE]">Get in touch</h2>
           <div className="flex flex-col gap-5 my-5">
             <p className="w-32">Contact Information</p>
@@ -25,7 +25,11 @@ const page = () => {
           </div>
         </div>
         {/* flex two  */}
-        <div className="flex-1 text-center">
+        <div
+          className="flex-1 text-center"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <div className="w-[450px] h-[450px] rounded-lg shadow-lg bg-white bg-opacity-5 flex items-center justify-center">
             <div className="flex flex-col items-center">
               <h2 className="text-left font-clash text-lg text-[#D434FE]">
