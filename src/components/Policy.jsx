@@ -28,7 +28,11 @@ const Policy = () => {
               it’s our aim to always take of our participant
             </p>
           </div>
-          <div className="text-sm md:text-base my-5 md:my-16 border border-[#D434FE] text-center  px-5 py-10 md:px-10 md:py-14">
+          <div
+            className="text-sm md:text-base my-5 md:my-16 border border-[#D434FE] text-center  px-5 py-10 md:px-10 md:py-14"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <p className="md:text-left">
               At getlinked tech Hackathon 1.0, we value your privacy and are
               committed to protecting your personal information. This Privacy
@@ -68,7 +72,11 @@ const Policy = () => {
         </div>
 
         {/* flex two  */}
-        <div className=" flex-1">
+        <div
+          className=" flex-1"
+          data-aos={`fade-up-left`}
+          data-aos-duration="1500"
+        >
           <Image src={privacyImage} alt="sponsors" width={800} height={600} />
         </div>
       </div>

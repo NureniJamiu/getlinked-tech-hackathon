@@ -14,7 +14,13 @@ const Subheader = ({ title, subtitle, optional, animateDirection }) => {
         {title} <br />
         <span className="text-[#D434FE]">{subtitle}</span>
       </h2>
-      <p className="md:my-8 text-sm text-gray-300">{optional}</p>
+      <p
+        className="md:my-8 text-sm text-gray-300"
+        data-aos={`fade-right`}
+        data-aos-duration="1500"
+      >
+        {optional}
+      </p>
       <Image
         src={purpleStar}
         width={12}

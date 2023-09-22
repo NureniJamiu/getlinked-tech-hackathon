@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Montserrat, Unica_One } from "next/font/google";
 import localFont from "next/font/local";
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.className} ${clash_display.variable} ${unica_one.variable} bg-[#150E28] text-[#fff] max-w-7xl mx-auto overflow-x-hidden`}
       >
+        <Navbar />
         {children}
       </body>
     </html>

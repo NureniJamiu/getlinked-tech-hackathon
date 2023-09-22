@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -12,7 +14,7 @@ const Navbar = () => {
     { title: "Timeline", url: "#" },
     { title: "Overview", url: "#" },
     { title: "FAQs", url: "#" },
-    { title: "Contact", url: "#" },
+    { title: "Contact", url: "/contact-us" },
   ];
 
   const handleToggle = () => setToggle(!toggle);
@@ -41,7 +43,7 @@ const Navbar = () => {
               <Image src={menu} alt="menu icon" width={20} height={20} />
             </div>
 
-            <Button className="hidden md:flex btn-gradient rounded px-10">
+            <Button className="hidden md:flex btn-gradient rounded px-10 text-sm">
               Register
             </Button>
           </div>

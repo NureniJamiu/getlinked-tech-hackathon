@@ -22,7 +22,6 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <Navbar />
       <Hero />
       <TheBigIdea />
       <Rules />

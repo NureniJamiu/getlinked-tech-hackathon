@@ -1,24 +1,21 @@
-import {
-  Facebook,
-  FacebookIcon,
-  Instagram,
-  Linkedin,
-  Locate,
-  LocateFixed,
-  LocateFixedIcon,
-  LocateOff,
-  LucideFacebook,
-  MapPin,
-  PhoneCall,
-  Twitter,
-  X,
-} from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  MapPin,
+  PhoneCall,
+  X,
+} from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#100B20] h-auto px-10 md:px-20 lg:px-28 py-12 min-h-[180px] text-sm">
+    <footer
+      className="bg-[#100B20] h-auto px-10 md:px-20 lg:px-28 py-12 min-h-[180px] text-sm"
+      data-aos={`fade-up`}
+      data-aos-duration="1500"
+    >
       <div className="flex flex-col md:flex-row gap-12">
         {/* flex one */}
         <div className="flex-1">
