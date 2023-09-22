@@ -30,7 +30,7 @@ const Navbar = () => {
         alt="flare"
         width={600}
         height={600}
-        className="absolute -top-4 left-8"
+        className="absolute -top-24 left-12 opacity-50"
       />
       <div className="flex items-center justify-between">
         <Link href="/" className=" font-clash text-xl md:text-2xl">

@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import sectionImage from "../../public/boy-girl-illustration.png";
+import flare from "../../public/purple-flare.png";
 import whiteStar from "../../public/star-white.png";
 import Subheader from "./Subheader";
 import { Button } from "./ui/button";
@@ -26,7 +27,25 @@ const JudgingCriteria = () => {
     },
   ];
   return (
-    <section className="text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 py-8">
+    <section className="relative text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 py-8">
+      <Image
+        src={flare}
+        alt="flare"
+        width={500}
+        height={500}
+        className="absolute -bottom-52 -z-20 -right-80 opacity-50"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      />
+      <Image
+        src={flare}
+        alt="flare"
+        width={500}
+        height={500}
+        className="absolute -bottom-2 -z-20 left-0 opacity-50"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      />
       <div className="flex flex-col md:flex-row md:items-center gap-8 md:16">
         <div
           className="md:flex-1 relative"

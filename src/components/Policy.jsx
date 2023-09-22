@@ -5,10 +5,20 @@ import { PlusIcon } from "lucide-react";
 import Image from "next/image";
 
 import privacyImage from "../../public/privacy-policy.png";
+import flare from "../../public/purple-flare.png";
 
 const Policy = () => {
   return (
-    <section className="px-10 md:px-20 lg:px-28 my-20 ">
+    <section className="relative px-10 md:px-20 lg:px-28 mt-20 overflow-hidden">
+      <Image
+        src={flare}
+        alt="flare"
+        width={600}
+        height={600}
+        className="absolute -bottom-52 -z-20 -left-72"
+        // data-aos="fade-left"
+        // data-aos-duration="1000"
+      />
       <div className="flex flex-col md:flex-row text-center md:text-left gap-16">
         {/* flex one  */}
         <div className="flex-1">

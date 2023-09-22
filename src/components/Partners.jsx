@@ -2,10 +2,29 @@ import React from "react";
 import Image from "next/image";
 
 import sponsors from "../../public/partners.png";
+import flare from "../../public/purple-flare.png";
 
 const Partners = () => {
   return (
-    <section className=" px-10 md:px-20 lg:px-28 py-20 border-b border-zinc-700">
+    <section className="relative px-10 md:px-20 lg:px-28 py-20 border-b border-zinc-700">
+      <Image
+        src={flare}
+        alt="flare"
+        width={800}
+        height={800}
+        className="absolute bottom-0 -z-50 -left-28 opacity-50"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      />
+      <Image
+        src={flare}
+        alt="flare"
+        width={600}
+        height={600}
+        className="absolute -bottom-44 -z-20 -right-80 opacity-50"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      />
       <div
         className="md:w-[480px] text-center md:h-auto mx-auto"
         data-aos="fade-up"

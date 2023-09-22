@@ -72,6 +72,45 @@ const Faq = () => {
                   you prefer.
                 </AccordionContent>
               </AccordionItem>
+              <AccordionItem
+                value="item-3"
+                data-aos="fade-up-right"
+                data-aos-duration="1500"
+              >
+                <AccordionTrigger>
+                  What happens if I don{"'"}t have an idea for a project?
+                </AccordionTrigger>
+                <AccordionContent>
+                  Yes. It&apos;s animated by default, but you can disable it if
+                  you prefer.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem
+                value="item-3"
+                data-aos="fade-up-right"
+                data-aos-duration="1500"
+              >
+                <AccordionTrigger>
+                  What happens if I don{"'"}t have an idea for a project?
+                </AccordionTrigger>
+                <AccordionContent>
+                  Yes. It&apos;s animated by default, but you can disable it if
+                  you prefer.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem
+                value="item-3"
+                data-aos="fade-up-right"
+                data-aos-duration="1500"
+              >
+                <AccordionTrigger>
+                  What happens if I don{"'"}t have an idea for a project?
+                </AccordionTrigger>
+                <AccordionContent>
+                  Yes. It&apos;s animated by default, but you can disable it if
+                  you prefer.
+                </AccordionContent>
+              </AccordionItem>
             </Accordion>
           </div>
         </div>
