@@ -43,9 +43,11 @@ const Navbar = () => {
               <Image src={menu} alt="menu icon" width={20} height={20} />
             </div>
 
-            <Button className="hidden md:flex btn-gradient rounded px-10 text-sm">
-              Register
-            </Button>
+            <Link href="/register">
+              <Button className="hidden md:flex btn-gradient rounded px-10 text-sm">
+                Register
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -94,13 +96,15 @@ const Navbar = () => {
               </Link>
             ))}
 
-            <Button
-              className="w-32 btn-gradient rounded"
-              data-aos="fade-right"
-              data-aos-duration="1600"
-            >
-              Register
-            </Button>
+            <Link href="/register">
+              <Button
+                className="w-32 btn-gradient rounded"
+                data-aos="fade-right"
+                data-aos-duration="1600"
+              >
+                Register
+              </Button>
+            </Link>
           </div>
         </div>
       )}
