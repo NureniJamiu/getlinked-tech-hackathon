@@ -11,13 +11,13 @@ import Star from "./Star";
 
 const Hero = () => {
   return (
-    <section
-      className="h-[calc(100vh-85px)] md:pl-28 border-b border-zinc-700 overflow-y-hidden"
-      data-aos="fade-up"
-      data-aos-duration="1500"
-    >
+    <section className="h-[calc(100vh-85px)] md:pl-28 border-b border-zinc-700 overflow-y-hidden">
       <div className="flex flex-col md:flex-row md:items-center">
-        <div className="md:flex-1 text-center md:text-left">
+        <div
+          className="md:flex-1 text-center md:text-left"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <div className="relative my-5 md:hidden">
             <span className="italic font-semibold ">
               Igniting a Revolution in HR Innovation
@@ -87,7 +87,11 @@ const Hero = () => {
         </div>
 
         {/* right-hand div  */}
-        <div className="relative md:flex-1">
+        <div
+          className="relative md:flex-1"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <div className="hidden md:block relative my-5 md:my-2 md:ml-4 ">
             <span className="italic font-semibold text-2xl">
               Igniting a Revolution in HR Innovation
