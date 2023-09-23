@@ -12,7 +12,7 @@ import Star from "./Star";
 
 const Hero = () => {
   return (
-    <section className="relative h-[calc(100vh-85px)] md:pl-28 border-b border-zinc-700 overflow-hidden">
+    <section className="relative md:pl-28 border-b border-zinc-700 ">
       <div className="flex flex-col md:flex-row md:items-center">
         <Image
           src={flare}
@@ -97,7 +97,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* right-hand div  */}
+        {/* flex two  */}
         <div
           className="relative md:flex-1"
           data-aos="fade-left"
@@ -115,7 +115,13 @@ const Hero = () => {
               className="absolute -bottom-4 right-24"
             />
           </div>
-          <Image src={heroImage} alt="hackathon guy" full className="" />
+          <Image
+            src={heroImage}
+            alt="hackathon guy"
+            width={800}
+            height={800}
+            className=""
+          />
         </div>
       </div>
     </section>
