@@ -3,8 +3,8 @@ import Image from "next/image";
 
 import flare from "../../../public/purple-flare.png";
 import sectionImage from "../../../public/register.png";
-import Form from "@/components/Form";
 import Navbar from "@/components/Navbar";
+import RegistrationForm from "@/components/RegistrationForm";
 
 const page = () => {
   return (
@@ -48,7 +48,7 @@ const page = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <Form />
+            <RegistrationForm />
           </div>
         </div>
       </main>

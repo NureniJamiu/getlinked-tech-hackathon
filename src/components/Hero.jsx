@@ -49,7 +49,7 @@ const Hero = () => {
           data-aos-duration="1000"
         />
         {/* flex one  */}
-        <div className="lg:flex-1 text-center md:text-left lg:pl-28">
+        <div className="flex-1 w-full text-center md:text-left lg:pl-28">
           <div className="relative my-5 lg:hidden w-80 md:w-[400px] mx-auto">
             <span className="italic font-semibold md:text-xl">
               Igniting a Revolution in HR Innovation
@@ -67,7 +67,7 @@ const Hero = () => {
           <div className="relative my-16 md:my-0">
             <Star name={grayStar} size={8} posOne="-top-10" posTwo="right-14" />
             <div className="relative mt-14">
-              <div className="relative text-4xl font-clash md:text-5xl text-center lg:text-left md:leading-tight w-96 lg:mx-0 md:w-[500px] mx-auto">
+              <div className="relative text-3xl font-clash md:text-5xl text-center lg:text-left md:leading-tight w-[350px] lg:mx-0 md:w-[500px] mx-auto">
                 <span>
                   getlinked Tech Hackathon{" "}
                   <span className="text-[#D434FE]">1.0</span>🔗💥

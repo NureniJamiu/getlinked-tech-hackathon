@@ -13,28 +13,30 @@ const TheBigIdea = () => {
       data-aos="fade-up"
       data-aos-duration="1500"
     >
-      <div className="flex flex-col md:flex-row md:items-center gap-16">
-        <div className="md:flex-1 w-96 relative ">
-          <Image
-            src={sectionImage}
-            alt="The Big Idea"
-            width={500}
-            height={500}
-          />
-          <Image
-            src={purpleStar}
-            width={12}
-            height={12}
-            alt="purple star"
-            className="absolute top-32 left-0"
-          />
-          <Image
-            src={curlyArrow}
-            width={50}
-            height={50}
-            alt="curly arrow"
-            className="absolute -bottom-10 right-40 md:-right-6 md:-bottom-2"
-          />
+      <div className="flex flex-col md:flex-row mx-auto md:items-center gap-16">
+        <div className="relative md:flex-1 text-center mx-auto p-8">
+          <div className="relative md:w-96">
+            <Image
+              src={sectionImage}
+              alt="The Big Idea"
+              width={500}
+              height={500}
+            />
+            <Image
+              src={purpleStar}
+              width={12}
+              height={12}
+              alt="purple star"
+              className="absolute top-32 left-0"
+            />
+            <Image
+              src={curlyArrow}
+              width={50}
+              height={50}
+              alt="curly arrow"
+              className="absolute -bottom-12 right-32 md:-right-6 md:-bottom-2"
+            />
+          </div>
         </div>
 
         <div className="md:flex-1 text-center md:text-left">
@@ -44,12 +46,12 @@ const TheBigIdea = () => {
           />
           <p className="my-5">
             Our tech hackathon is a melting pot of visionaries, and its purpose
-            is as clear as day: to shape the future. Whether you{"'"}re a coding
-            genius, a design maverick, or a concept wizard, you{"'"}ll have the
-            chance to transform your ideas into reality. Solving real-world
-            problems, pushing the boundaries of technology, and creating
-            solutions that can change the world, that{"'"}s what we{"'"}re all
-            about!
+            is as clear as day: to shape the future. Whether you{"'"}
+            re a coding genius, a design maverick, or a concept wizard, you
+            {"'"}ll have the chance to transform your ideas into reality.
+            Solving real-world problems, pushing the boundaries of technology,
+            and creating solutions that can change the world, that{"'"}s what we
+            {"'"}re all about!
           </p>
         </div>
       </div>

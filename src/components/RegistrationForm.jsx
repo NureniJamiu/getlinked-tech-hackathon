@@ -11,7 +11,7 @@ const onSubmit = async (values, actions) => {
   actions.resetForm();
 };
 
-const Form = () => {
+const RegistrationForm = () => {
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
       initialValues: {
@@ -54,7 +54,7 @@ const Form = () => {
               onBlur={handleBlur}
               placeholder="Enter the name of your group"
               className={` border border-[#fff] bg-inherit py-3 px-5 w-full rounded text-xs focus:outline-none mt-2 ${
-                errors.name && touched.name ? "border-red-500" : ""
+                errors.name && touched.name && "border-red-500"
               }`}
             />
             {errors.name && touched.name && (
@@ -186,4 +186,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default RegistrationForm;

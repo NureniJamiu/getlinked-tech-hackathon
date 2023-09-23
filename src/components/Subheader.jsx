@@ -7,10 +7,10 @@ const Subheader = ({ title, subtitle, optional }) => {
   return (
     <>
       <div className="relative">
-        <h2 className="font-clash text-2xl md:text-3xl">
-          {title} <br />
+        <div className="font-clash text-2xl md:text-3xl">
+          <h2 className="">{title}</h2>
           <span className="text-[#D434FE]">{subtitle}</span>
-        </h2>
+        </div>
         <Image
           src={purpleStar}
           width={12}

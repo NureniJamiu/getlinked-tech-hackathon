@@ -1,16 +1,27 @@
-import Navbar from "@/components/Navbar";
-import { Facebook, Instagram, Linkedin, X } from "lucide-react";
 import React from "react";
+import Navbar from "@/components/Navbar";
+import flare from "../../../public/purple-flare.png";
+import Image from "next/image";
+import ContactForm from "@/components/ContactForm";
+
+import { ArrowLeft, Facebook, Instagram, Linkedin, X } from "lucide-react";
 
 const page = () => {
   return (
     <>
       <Navbar className="hidden md:block" />
-      <main className="flex items-center justify-center px-12 md:px-22 lg:px-44 h-[calc(100vh-66px)]">
+      <main className="relative flex items-center justify-center px-12 md:px-22 lg:px-44 md:h-[calc(100vh-66px)] overflow-hidden">
+        <Image
+          src={flare}
+          alt="flare"
+          width={700}
+          height={700}
+          className="absolute bottom-44 right-24 md:-bottom-52 -z-20 md:-right-64 opacity-50"
+        />
         <div className="flex flex-col  md:flex-row md:items-center gap-72">
           {/* flex one */}
           <div
-            className="flex-1"
+            className="hidden md:block flex-1 "
             data-aos="fade-right"
             data-aos-duration="1500"
           >
@@ -34,31 +45,26 @@ const page = () => {
           {/* flex two  */}
           <div
             className="flex-1 text-center"
-            data-aos="fade-left"
-            data-aos-duration="1500"
+            // data-aos="fade-left"
+            // data-aos-duration="1500"
           >
-            <div className="w-[450px] h-[450px] rounded-lg shadow-lg bg-white bg-opacity-5 flex items-center justify-center">
+            <div className="w-[450px] h-auto py-10 rounded-lg md:shadow-lg md:bg-white md:bg-opacity-5 flex items-center justify-center">
               <div className="flex flex-col items-center">
-                <h2 className="text-left font-clash text-lg text-[#D434FE]">
+                <div
+                  className="md:hidden self-start bg-gradient-to-b from-purple-500 to-pink-500 rounded-full p-[2px] cursor-pointer"
+                  // onClick={goBack}
+                >
+                  <div className=" bg-[#150E28] rounded-full p-1">
+                    <ArrowLeft size={18} />
+                  </div>
+                </div>
+                <h2 className="text-left font-clash text-lg text-[#D434FE] mt-8 md:mt-0">
                   Questions or need assistance? <br /> Let{"'"}s talk about it
                 </h2>
-                <div className="w-72 ">
-                  <input
-                    type="text"
-                    placeholder="First Name"
-                    className="border border-[#fff] bg-inherit py-2 px-5 w-full rounded text-sm mt-6 focus:outline-none"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="border border-[#fff] bg-inherit py-2 px-5 w-full rounded text-sm mt-6 focus:outline-none"
-                  />
-                  <textarea
-                    placeholder="Message"
-                    rows={5}
-                    className="border border-[#fff] bg-inherit py-2 px-5 rounded w-full text-sm mt-6 focus:outline-none resize-none"
-                  />
-                </div>
+                <p className="md:hidden text-sm w-[280px] text-left mt-3">
+                  Email us below to any question related to our event
+                </p>
+                <ContactForm />
               </div>
             </div>
           </div>
