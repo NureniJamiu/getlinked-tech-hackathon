@@ -24,6 +24,29 @@ export const attributes = [
   },
 ];
 
+export const accordionData = [
+  {
+    title: "Can I work on a project I started before the Hackathon?",
+    content:
+      "Evaluate the uniqueness and creativity of the solution. Consider whether it addresses a real-world problem in a novel way or introduces innovative features.",
+  },
+  {
+    title: "What happens if I need help during the Hackathon?",
+    content:
+      "Evaluate the uniqueness and creativity of the solution. Consider whether it addresses a real-world problem in a novel way or introduces innovative features.",
+  },
+  {
+    title: "What happens if I don't have an idea or a project?",
+    content:
+      "Evaluate the uniqueness and creativity of the solution. Consider whether it addresses a real-world problem in a novel way or introduces innovative features.",
+  },
+  {
+    title: "Can I join a team or do I have to come with one?",
+    content:
+      "Evaluate the uniqueness and creativity of the solution. Consider whether it addresses a real-world problem in a novel way or introduces innovative features.",
+  },
+];
+
 export const TimeLineData = [
   {
     id: 1,

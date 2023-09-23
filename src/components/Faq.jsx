@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/accordion";
 import Subheader from "./Subheader";
 import Image from "next/image";
+import { accordionData } from "@/mockDB";
 
 const Faq = () => {
   return (
@@ -33,19 +34,17 @@ const Faq = () => {
           </div>
           <div>
             <Accordion type="single" collapsible className="w-full text-xs">
-              <AccordionItem
-                value="item-1"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                <AccordionTrigger>
-                  Can I submit a project I started before the Hackathon?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Yes. It adheres to the WAI-ARIA design pattern.
-                </AccordionContent>
-              </AccordionItem>
-              {/* Other AccordionItems go here */}
+              {accordionData.map((_, index) => (
+                <AccordionItem
+                  key={index}
+                  value={`item-${index + 1}`}
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <AccordionTrigger>{_?.title}</AccordionTrigger>
+                  <AccordionContent>{_?.content}</AccordionContent>
+                </AccordionItem>
+              ))}
             </Accordion>
           </div>
         </div>
