@@ -9,7 +9,7 @@ import Subheader from "./Subheader";
 const Rules = () => {
   return (
     <section
-      className="relative text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 py-8"
+      className="relative text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 py-8 overflow-hidden"
       data-aos="fade-up"
       data-aos-duration="1500"
     >
@@ -25,7 +25,7 @@ const Rules = () => {
         alt="flare"
         width={500}
         height={500}
-        className="absolute bottom-20 -right-60 md:-bottom-52 -z-20 md:-right-80 opacity-50 overflow-hidden"
+        className="absolute bottom-20 -right-60 md:-bottom-52 md:-right-80 opacity-50"
       />
       <div className="flex flex-col md:flex-row-reverse md:items-center gap-8 md:16">
         <div className="md:flex-1 relative">
