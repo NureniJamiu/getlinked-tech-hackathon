@@ -4,7 +4,7 @@ import TimelineCard from "./TimelineCard";
 
 const Timeline = () => {
   return (
-    <>
+    <section data-aos="fade-up" data-aos-duration="1000">
       <div className="hidden lg:inline">
         <div className="absolute w-[4px] h-[137px] left-[50%]  mt-[18rem] bg-[#D434FE]" />
         <div className="absolute w-[53px] h-[53px] rounded-[26.5px] flex items-center justify-center text-white font-[700] text-[24px] left-[48.3%]  mt-[27rem] bg-[#D434FE]">
@@ -53,7 +53,7 @@ const Timeline = () => {
           <TimelineCard />
         </div>
       </section>
-    </>
+    </section>
   );
 };
 
