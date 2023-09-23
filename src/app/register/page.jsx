@@ -16,7 +16,7 @@ const page = () => {
           alt="flare"
           width={700}
           height={700}
-          className="absolute top-44 -left-24 md:-bottom-52 -z-20 md:-right-64 opacity-50"
+          className="absolute top-44 right-24 md:-bottom-52 -z-20 md:-right-64 opacity-50"
         />
         <div className="flex flex-col md:flex-row md:items-center gap-0 md:gap-8">
           {/* flex one */}
