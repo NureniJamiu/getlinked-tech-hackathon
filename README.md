@@ -1,4 +1,4 @@
-# Hackathon Project Name
+# GetlinkedAI Tech Hackathon
 
 ![Project Banner Coming Soon!](https://getlinked-tech-hackathon.vercel.app/)
 
