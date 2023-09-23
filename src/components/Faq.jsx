@@ -1,8 +1,6 @@
 import React from "react";
-
 import sectionImage from "../../public/faq-guy.png";
 import purpleStar from "../../public/star-purple-light.png";
-
 import {
   Accordion,
   AccordionContent,
@@ -16,6 +14,7 @@ const Faq = () => {
   return (
     <section className="px-10 md:px-20 lg:px-28 py-12 border-b border-zinc-700 overflow-hidden">
       <div className="flex flex-col md:flex-row md:items-center gap-5 md:gap-12 text-center md:text-left">
+        {/* Left Column */}
         <div className="flex-1">
           <div>
             <Subheader
@@ -46,48 +45,11 @@ const Faq = () => {
                   Yes. It adheres to the WAI-ARIA design pattern.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-2"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                <AccordionTrigger>
-                  What happens if I need help during the Hackathon?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Yes. It comes with default styles that matches the other
-                  components&apos; aesthetic.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem
-                value="item-3"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                <AccordionTrigger>
-                  What happens if I don{"'"}t have an idea for a project?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Yes. It&apos;s animated by default, but you can disable it if
-                  you prefer.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem
-                value="item-4"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                <AccordionTrigger>
-                  What happens if I don{"'"}t have an idea for a project?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Yes. It&apos;s animated by default, but you can disable it if
-                  you prefer.
-                </AccordionContent>
-              </AccordionItem>
+              {/* Other AccordionItems go here */}
             </Accordion>
           </div>
         </div>
+        {/* Right Column */}
         <div
           className="md:flex-1 relative"
           data-aos="fade-up"

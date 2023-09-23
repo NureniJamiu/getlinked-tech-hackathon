@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
-
 import flare from "../../../public/purple-flare.png";
 import sectionImage from "../../../public/register.png";
 import Navbar from "@/components/Navbar";
 import RegistrationForm from "@/components/RegistrationForm";
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <Navbar className="hidden md:block" />
@@ -19,7 +18,7 @@ const page = () => {
           className="absolute top-44 right-24 md:-bottom-52 -z-20 md:-right-64 opacity-50"
         />
         <div className="flex flex-col md:flex-row md:items-center gap-0 md:gap-8">
-          {/* flex one */}
+          {/* Flex one */}
           <div
             className="md:relative w-[500px] h-[500px] px-12 pt-5 md:px-0 md:pt-0 flex-1"
             data-aos="fade-up"
@@ -42,7 +41,7 @@ const page = () => {
               className="md:hidden mx-auto"
             />
           </div>
-          {/* flex two  */}
+          {/* Flex two */}
           <div
             className="flex-1 text-center"
             data-aos="fade-up"
@@ -56,4 +55,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
