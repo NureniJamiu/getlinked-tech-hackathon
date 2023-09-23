@@ -7,16 +7,10 @@ import Image from "next/image";
 
 import menu from "../../public/Vector.png";
 import flare from "../../public/purple-flare.png";
+import { links } from "@/mockDB";
 
 const Navbar = ({ className }) => {
   const [toggle, setToggle] = useState(false);
-
-  const links = [
-    { title: "Timeline", url: "#" },
-    { title: "Overview", url: "#" },
-    { title: "FAQs", url: "#" },
-    { title: "Contact", url: "/contact" },
-  ];
 
   const handleToggle = () => setToggle(!toggle);
   return (

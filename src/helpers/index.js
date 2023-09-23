@@ -8,19 +8,23 @@ export const onSubmit = async (
   setIsModalOpen
 ) => {
   if (!values) return;
+
   const baseUrl = "https://backend.getlinked.ai";
+  const endpoint = `${baseUrl}${pathname}`;
+
   try {
     setIsLoading(true);
-    const endpoint = `${baseUrl}${pathname}`;
     await axios.post(endpoint, values);
     setIsLoading(false);
     setIsModalOpen(true);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await delay(1000);
     actions.resetForm();
   } catch (error) {
     setIsLoading(false);
     console.error("Error:", error);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await delay(1000);
     actions.resetForm();
   }
 };
+
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));

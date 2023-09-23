@@ -1,3 +1,10 @@
+export const links = [
+  { title: "Timeline", url: "#" },
+  { title: "Overview", url: "#" },
+  { title: "FAQs", url: "#" },
+  { title: "Contact", url: "/contact" },
+];
+
 export const attributes = [
   {
     title: "Innovation and Creativity",
