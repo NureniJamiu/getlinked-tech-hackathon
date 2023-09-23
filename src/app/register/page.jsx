@@ -25,7 +25,7 @@ const page = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <h2 className="md:hidden font-clash text-xl text-[#D434FE]">
+            <h2 className="ml-14 md:ml-0 md:hidden font-clash text-xl text-[#D434FE]">
               Register
             </h2>
             <Image

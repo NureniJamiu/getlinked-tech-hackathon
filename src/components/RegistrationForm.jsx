@@ -113,7 +113,8 @@ const RegistrationForm = () => {
             )}
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-3 w-64 md:w-full md:gap-3 mt-1">
+
+        <div className="grid grid-cols-2 gap-3 px-5 md:px-0 md:w-full md:gap-3 mt-1">
           <div className="text-left">
             <label className="text-xs font-semibold ">Category</label>
             <select
@@ -167,7 +168,7 @@ const RegistrationForm = () => {
             )}
           </div>
         </div>
-        <div className="text-left w-64 md:w-full text-xs">
+        <div className="text-left px-5 md:px-0 md:w-full text-xs">
           <p className="text-[#FF26B9] italic  my-2">
             Please review your registration details before submitting
           </p>
@@ -177,10 +178,10 @@ const RegistrationForm = () => {
               I agree with the event terms and condition and privacy policy
             </span>
           </div>
+          <Button className="btn-gradient rounded px-10 text-sm w-full">
+            Submit
+          </Button>
         </div>
-        <Button className="btn-gradient rounded px-10 text-sm w-full">
-          Submit
-        </Button>
       </div>
     </form>
   );

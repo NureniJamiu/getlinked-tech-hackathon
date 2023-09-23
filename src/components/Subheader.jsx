@@ -16,7 +16,7 @@ const Subheader = ({ title, subtitle, optional }) => {
           width={12}
           height={12}
           alt="purple star"
-          className=" absolute top-8 right-0 md:right-12"
+          className=" absolute top-8 right-0 md:right-12 animate-pulse"
         />
       </div>
       <p className="md:my-8 text-sm text-gray-300">{optional}</p>

@@ -4,7 +4,12 @@ import flare from "../../../public/purple-flare.png";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 
-import { ArrowLeft, Facebook, Instagram, Linkedin, X } from "lucide-react";
+import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+
+import { RiTwitterXFill } from "react-icons/ri";
+import { MdKeyboardArrowLeft } from "react-icons/md";
+
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -36,10 +41,10 @@ const page = () => {
             </div>
             <span className="text-[#D434FE]">Share on</span>
             <div className="flex items-center mt-2 gap-2">
-              <Instagram size={20} />
-              <X size={20} />
-              <Facebook size={20} />
-              <Linkedin size={20} />
+              <FaInstagram size={20} />
+              <RiTwitterXFill size={20} />
+              <FaFacebookF size={20} />
+              <FaLinkedinIn size={20} />
             </div>
           </div>
           {/* flex two  */}
@@ -50,14 +55,15 @@ const page = () => {
           >
             <div className="w-[450px] h-auto py-10 rounded-lg md:shadow-lg md:bg-white md:bg-opacity-5 flex items-center justify-center">
               <div className="flex flex-col items-center">
-                <div
+                <Link
+                  href="/"
                   className="md:hidden self-start bg-gradient-to-b from-purple-500 to-pink-500 rounded-full p-[2px] cursor-pointer"
                   // onClick={goBack}
                 >
                   <div className=" bg-[#150E28] rounded-full p-1">
-                    <ArrowLeft size={18} />
+                    <MdKeyboardArrowLeft size={18} />
                   </div>
-                </div>
+                </Link>
                 <h2 className="text-left font-clash text-lg text-[#D434FE] mt-8 md:mt-0">
                   Questions or need assistance? <br /> Let{"'"}s talk about it
                 </h2>
@@ -65,6 +71,23 @@ const page = () => {
                   Email us below to any question related to our event
                 </p>
                 <ContactForm />
+                <div className="md:hidden mt-8">
+                  <span className="text-[#D434FE]">Share on</span>
+                  <div className="flex items-center mt-2 gap-2">
+                    <Link href="https://instagram.com">
+                      <FaInstagram size={20} />
+                    </Link>
+                    <Link href="https://x.com">
+                      <RiTwitterXFill size={20} />
+                    </Link>
+                    <Link href="https://facebook.com">
+                      <FaFacebookF size={20} />
+                    </Link>
+                    <Link href="https://linkedin.com">
+                      <FaLinkedinIn size={20} />
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

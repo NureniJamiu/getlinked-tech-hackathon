@@ -17,6 +17,7 @@ const ContactForm = () => {
       initialValues: {
         name: "",
         email: "",
+        topic: "",
         message: "",
       },
       validationSchema: contactUsSchema,
@@ -51,6 +52,20 @@ const ContactForm = () => {
       />
       {errors.email && touched.email && (
         <p className="text-xs text-red-500 text-left">{errors.email}</p>
+      )}
+      <input
+        type="text"
+        id="topic"
+        value={values.topic}
+        onChange={handleChange}
+        onBlur={handleBlur}
+        placeholder="Topic"
+        className={`border border-[#fff] bg-inherit py-2 px-5 w-full rounded text-sm mt-6 focus:outline-none ${
+          errors.topic && touched.topic && "border-red-500"
+        }`}
+      />
+      {errors.topic && touched.topic && (
+        <p className="text-xs text-red-500 text-left">{errors.topic}</p>
       )}
       <textarea
         id="message"

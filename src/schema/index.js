@@ -6,6 +6,7 @@ export const contactUsSchema = yup.object().shape({
     .string()
     .email("Please enter a valid email")
     .required("Email is a required field"),
+  topic: yup.string().required("This field is required"),
   message: yup.string().required("This field is required"),
 });
 

@@ -1,20 +1,16 @@
 import Link from "next/link";
 import React from "react";
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  MapPin,
-  PhoneCall,
-  X,
-} from "lucide-react";
+import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+
+import { RiTwitterXFill } from "react-icons/ri";
+import { LuMapPin } from "react-icons/lu";
+import { PhoneCall } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer
       className="bg-[#100B20] h-auto px-10 md:px-20 lg:px-28 py-12 min-h-[180px] text-sm"
-      data-aos={`fade-up`}
-      data-aos-duration="1500"
+      data-aos="fade-up"
     >
       <div className="flex flex-col md:flex-row gap-12">
         {/* flex one */}
@@ -46,10 +42,18 @@ const Footer = () => {
             <div className="mt-3 flex items-center gap-3">
               <span className="text-[#D434FE]">Follow us</span>
               <div className="flex items-center gap-2">
-                <Instagram size={20} />
-                <X size={20} />
-                <Facebook size={20} />
-                <Linkedin size={20} />
+                <Link href="https://instagram.com">
+                  <FaInstagram size={20} />
+                </Link>
+                <Link href="https://x.com">
+                  <RiTwitterXFill size={20} />
+                </Link>
+                <Link href="https://facebook.com">
+                  <FaFacebookF size={20} />
+                </Link>
+                <Link href="https://linkedin.com">
+                  <FaLinkedinIn size={20} />
+                </Link>
               </div>
             </div>
           </div>
@@ -60,7 +64,7 @@ const Footer = () => {
               <span>+234 916000000</span>
             </div>
             <div className="mt-3 flex items-start gap-3">
-              <MapPin size={30} />
+              <LuMapPin size={22} />
               <p className="w-32"> 27, Alara Street Yaba 100012, Lagos State</p>
             </div>
           </div>

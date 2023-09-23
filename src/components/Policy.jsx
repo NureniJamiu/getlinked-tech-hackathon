@@ -4,6 +4,8 @@ import { Button } from "./ui/button";
 import { PlusIcon } from "lucide-react";
 import Image from "next/image";
 
+import { FaCheck } from "react-icons/fa";
+
 import privacyImage from "../../public/privacy-policy.png";
 import flare from "../../public/purple-flare.png";
 
@@ -35,8 +37,8 @@ const Policy = () => {
               it’s our aim to always take of our participant
             </p>
           </div>
-          <div className="text-sm md:text-base my-5 md:my-16 border border-[#D434FE] text-center  px-5 py-10 md:px-10 md:py-14">
-            <p className="md:text-left leading-8">
+          <div className="text-sm my-5 md:my-16 border border-[#D434FE] text-center  px-5 py-10 md:px-10 md:py-14">
+            <p className="md:text-left">
               At getlinked tech Hackathon 1.0, we value your privacy and are
               committed to protecting your personal information. This Privacy
               Policy outlines how we collect, use, disclose, and safeguard your
@@ -52,7 +54,7 @@ const Policy = () => {
             </div>
             <div className="flex text-left items-start gap-3 my-3">
               <span className="bg-green-600 rounded-full p-1">
-                <PlusIcon size={12} />
+                <FaCheck size={12} />
               </span>
               <span className="leading-6">
                 The Standard License grants you a non-exclusive right to
@@ -61,7 +63,7 @@ const Policy = () => {
             </div>
             <div className="flex text-left items-start gap-3 my-3">
               <span className="bg-green-600 rounded-full p-1">
-                <PlusIcon size={12} />
+                <FaCheck size={12} />
               </span>
               <span className="leading-6">
                 The Standard License grants you a non-exclusive right to
