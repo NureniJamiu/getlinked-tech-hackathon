@@ -30,15 +30,15 @@ const Navbar = () => {
         alt="flare"
         width={600}
         height={600}
-        className="absolute -top-24 left-12 opacity-50"
+        className="absolute -top-12 -left-28 lg:-top-24 lg:left-12 opacity-50"
       />
       <div className="flex items-center justify-between">
         <Link href="/" className=" font-clash text-xl md:text-2xl">
           get<span className=" text-[#D434FE] ">linked</span>
         </Link>
 
-        <div className="flex items-center justify-between md:gap-12 lg:gap-36">
-          <div className="hidden md:flex gap-8">
+        <div className="flex items-center justify-between md:gap-12 lg:gap-20">
+          <div className="hidden lg:flex gap-8">
             {links.map((_, index) => (
               <Link key={index} href={_.url} className="text-sm">
                 {_.title}
@@ -47,12 +47,12 @@ const Navbar = () => {
           </div>
 
           <div>
-            <div className="md:hidden cursor-pointer" onClick={handleToggle}>
+            <div className="lg:hidden cursor-pointer" onClick={handleToggle}>
               <Image src={menu} alt="menu icon" width={20} height={20} />
             </div>
 
             <Link href="/register">
-              <Button className="hidden md:flex btn-gradient rounded px-10 text-sm">
+              <Button className="hidden lg:flex btn-gradient rounded px-10 text-sm">
                 Register
               </Button>
             </Link>

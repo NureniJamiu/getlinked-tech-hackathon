@@ -8,13 +8,13 @@ import Subheader from "./Subheader";
 
 const TheBigIdea = () => {
   return (
-    <section className="text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 py-8">
+    <section
+      className="text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 py-8"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div className="flex flex-col md:flex-row md:items-center gap-16">
-        <div
-          className="md:flex-1 relative"
-          data-aos="fade-up-right"
-          data-aos-duration="1500"
-        >
+        <div className="md:flex-1 w-96 relative ">
           <Image
             src={sectionImage}
             alt="The Big Idea"
@@ -33,7 +33,7 @@ const TheBigIdea = () => {
             width={50}
             height={50}
             alt="curly arrow"
-            className="absolute -bottom-10 left-40 md:left-[440px] md:-bottom-2"
+            className="absolute -bottom-10 right-40 md:-right-6 md:-bottom-2"
           />
         </div>
 
@@ -41,9 +41,8 @@ const TheBigIdea = () => {
           <Subheader
             title="Introduction to getlinked"
             subtitle="techHackathon 1.0"
-            animateDirection="left"
           />
-          <p className="my-5" data-aos="fade-up-left" data-aos-duration="1500">
+          <p className="my-5">
             Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you{"'"}re a coding
             genius, a design maverick, or a concept wizard, you{"'"}ll have the

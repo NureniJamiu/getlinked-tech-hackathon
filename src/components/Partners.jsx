@@ -12,9 +12,7 @@ const Partners = () => {
         alt="flare"
         width={800}
         height={800}
-        className="absolute bottom-0 -z-50 -left-28 opacity-50"
-        data-aos="fade-up"
-        data-aos-duration="1000"
+        className="absolute md:bottom-0 -top-12 -z-50 -left-28 opacity-50"
       />
       <Image
         src={flare}
@@ -22,8 +20,6 @@ const Partners = () => {
         width={600}
         height={600}
         className="absolute -bottom-44 -z-20 -right-80 opacity-50"
-        data-aos="fade-up"
-        data-aos-duration="1000"
       />
       <div
         className="md:w-[480px] text-center md:h-auto mx-auto"

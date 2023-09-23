@@ -9,15 +9,17 @@ import flare from "../../public/purple-flare.png";
 
 const Policy = () => {
   return (
-    <section className="relative px-10 md:px-20 lg:px-28 mt-20 overflow-hidden">
+    <section
+      className="relative px-10 md:px-20 lg:px-28 mt-20 overflow-hidden"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <Image
         src={flare}
         alt="flare"
         width={600}
         height={600}
-        className="absolute -bottom-52 -z-20 -left-72"
-        // data-aos="fade-left"
-        // data-aos-duration="1000"
+        className="absolute top-64 -left-52 md:-bottom-52 -z-20 md:-left-72 opacity-50"
       />
       <div className="flex flex-col md:flex-row text-center md:text-left gap-16">
         {/* flex one  */}
@@ -26,24 +28,15 @@ const Policy = () => {
             <Subheader
               title="Privacy Policy and"
               subtitle="Terms"
-              animateDirection="left"
               optional="Last updated on September 12, 2023"
             />
-            <p
-              className="my-5 max-w-sm"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
+            <p className="my-5 max-w-sm text-sm">
               Below are our privacy & policy, which outline a lot of goodies.
               it’s our aim to always take of our participant
             </p>
           </div>
-          <div
-            className="text-sm md:text-base my-5 md:my-16 border border-[#D434FE] text-center  px-5 py-10 md:px-10 md:py-14"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            <p className="md:text-left">
+          <div className="text-sm md:text-base my-5 md:my-16 border border-[#D434FE] text-center  px-5 py-10 md:px-10 md:py-14">
+            <p className="md:text-left leading-8">
               At getlinked tech Hackathon 1.0, we value your privacy and are
               committed to protecting your personal information. This Privacy
               Policy outlines how we collect, use, disclose, and safeguard your
@@ -61,7 +54,7 @@ const Policy = () => {
               <span className="bg-green-600 rounded-full p-1">
                 <PlusIcon size={12} />
               </span>
-              <span>
+              <span className="leading-6">
                 The Standard License grants you a non-exclusive right to
                 navigate and register for our event
               </span>
@@ -70,7 +63,7 @@ const Policy = () => {
               <span className="bg-green-600 rounded-full p-1">
                 <PlusIcon size={12} />
               </span>
-              <span>
+              <span className="leading-6">
                 The Standard License grants you a non-exclusive right to
                 navigate and register for our event
               </span>
@@ -82,11 +75,7 @@ const Policy = () => {
         </div>
 
         {/* flex two  */}
-        <div
-          className=" flex-1"
-          data-aos={`fade-up-left`}
-          data-aos-duration="1500"
-        >
+        <div className=" flex-1">
           <Image src={privacyImage} alt="sponsors" width={800} height={600} />
         </div>
       </div>

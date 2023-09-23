@@ -34,7 +34,7 @@ const Footer = () => {
           </p>
         </div>
         {/* flex two  */}
-        <div className="flex-1 flex ">
+        <div className="flex-1 flex flex-col md:flex-row gap-10">
           <div className="flex-1">
             <h5 className="text-[#D434FE] font-semibold mb-3">Useful Links</h5>
             <ul className="flex flex-col  gap-3">
@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
             <div className="mt-3 flex items-start gap-3">
               <MapPin size={30} />
-              <span>27, Alara Street Yaba 100012, Lagos State</span>
+              <p className="w-32"> 27, Alara Street Yaba 100012, Lagos State</p>
             </div>
           </div>
         </div>

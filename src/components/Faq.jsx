@@ -19,13 +19,13 @@ const Faq = () => {
         <div className="flex-1">
           <div>
             <Subheader
-              title="Frequently asked"
+              title="Frequently Asked"
               subtitle="Questions"
               animateDirection="right"
             />
             <p
-              className="my-5"
-              data-aos="fade-up-right"
+              className="my-5 text-sm"
+              data-aos="fade-up"
               data-aos-duration="1500"
             >
               We got answers to the questions that you might want to ask about
@@ -33,11 +33,11 @@ const Faq = () => {
             </p>
           </div>
           <div>
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion type="single" collapsible className="w-full text-xs">
               <AccordionItem
                 value="item-1"
-                data-aos="fade-up-right"
-                data-aos-duration="1500"
+                data-aos="fade-up"
+                data-aos-duration="1000"
               >
                 <AccordionTrigger>
                   Can I submit a project I started before the Hackathon?
@@ -48,8 +48,8 @@ const Faq = () => {
               </AccordionItem>
               <AccordionItem
                 value="item-2"
-                data-aos="fade-up-right"
-                data-aos-duration="1500"
+                data-aos="fade-up"
+                data-aos-duration="1000"
               >
                 <AccordionTrigger>
                   What happens if I need help during the Hackathon?
@@ -61,8 +61,8 @@ const Faq = () => {
               </AccordionItem>
               <AccordionItem
                 value="item-3"
-                data-aos="fade-up-right"
-                data-aos-duration="1500"
+                data-aos="fade-up"
+                data-aos-duration="1000"
               >
                 <AccordionTrigger>
                   What happens if I don{"'"}t have an idea for a project?
@@ -73,35 +73,9 @@ const Faq = () => {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
-                value="item-3"
-                data-aos="fade-up-right"
-                data-aos-duration="1500"
-              >
-                <AccordionTrigger>
-                  What happens if I don{"'"}t have an idea for a project?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Yes. It&apos;s animated by default, but you can disable it if
-                  you prefer.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem
-                value="item-3"
-                data-aos="fade-up-right"
-                data-aos-duration="1500"
-              >
-                <AccordionTrigger>
-                  What happens if I don{"'"}t have an idea for a project?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Yes. It&apos;s animated by default, but you can disable it if
-                  you prefer.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem
-                value="item-3"
-                data-aos="fade-up-right"
-                data-aos-duration="1500"
+                value="item-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
               >
                 <AccordionTrigger>
                   What happens if I don{"'"}t have an idea for a project?
@@ -114,11 +88,10 @@ const Faq = () => {
             </Accordion>
           </div>
         </div>
-
         <div
           className="md:flex-1 relative"
-          data-aos="fade-up-left"
-          data-aos-duration="1500"
+          data-aos="fade-up"
+          data-aos-duration="1000"
         >
           <Image
             src={sectionImage}

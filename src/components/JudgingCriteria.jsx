@@ -27,31 +27,27 @@ const JudgingCriteria = () => {
     },
   ];
   return (
-    <section className="relative text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 py-8">
+    <section
+      className="relative text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 pt-8 pb-14 md:py-8"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <Image
         src={flare}
         alt="flare"
         width={500}
         height={500}
-        className="absolute -bottom-52 -z-20 -right-80 opacity-50"
-        data-aos="fade-left"
-        data-aos-duration="1000"
+        className="absolute -bottom-24 -right-60 md:-bottom-52 -z-20 md:-right-80 opacity-50"
       />
       <Image
         src={flare}
         alt="flare"
         width={500}
         height={500}
-        className="absolute -bottom-2 -z-20 left-0 opacity-50"
-        data-aos="fade-right"
-        data-aos-duration="1000"
+        className="absolute top-12 -left-14  md:-bottom-2 -z-20 md:left-0 opacity-50"
       />
       <div className="flex flex-col md:flex-row md:items-center gap-8 md:16">
-        <div
-          className="md:flex-1 relative"
-          data-aos="fade-up-right"
-          data-aos-duration="1500"
-        >
+        <div className="md:flex-1 relative">
           <Image
             src={sectionImage}
             alt="The Big Idea"
@@ -69,16 +65,12 @@ const JudgingCriteria = () => {
         </div>
 
         <div className="md:flex-1 text-center md:text-left">
-          <Subheader
-            title="Judging Criteria"
-            subtitle="Key attributes"
-            animateDirection="left"
-          />
+          <Subheader title="Judging Criteria" subtitle="Key attributes" />
           {attributes.map((_, index) => (
             <p
               key={index}
               className="my-8"
-              data-aos="fade-up-left"
+              data-aos="fade-up"
               data-aos-duration="1500"
             >
               <span className="text-[#FF26B9] font-semibold">{_.title}: </span>
@@ -88,8 +80,8 @@ const JudgingCriteria = () => {
 
           <Button
             className="btn-gradient rounded px-8"
-            data-aos="fade-up-left"
-            data-aos-duration="1500"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           >
             Read More
           </Button>
