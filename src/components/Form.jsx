@@ -39,7 +39,9 @@ const Form = () => {
           <p className="text-base md:text-xs my-2">
             Be part of this movement............
           </p>
-          <p className="font-semibold">CREATE YOUR ACCOUNT</p>
+          <p className="text-xl md:text-base font-semibold">
+            CREATE YOUR ACCOUNT
+          </p>
         </div>
         <div className="grid md:grid-cols-2 gap-3 text-sm">
           <div className="text-left">

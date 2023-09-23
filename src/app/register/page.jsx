@@ -1,9 +1,8 @@
-import { Facebook, Instagram, Linkedin, X } from "lucide-react";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
+import flare from "../../../public/purple-flare.png";
 import sectionImage from "../../../public/register.png";
-import { Button } from "@/components/ui/button";
 import Form from "@/components/Form";
 import Navbar from "@/components/Navbar";
 
@@ -11,7 +10,14 @@ const page = () => {
   return (
     <>
       <Navbar className="hidden md:block" />
-      <main className="flex items-center justify-center px-12 md:px-22 lg:px-44 md:h-[calc(100vh-66px)] overflow-hidden">
+      <main className="relative flex items-center justify-center px-12 md:px-22 lg:px-44 md:h-[calc(100vh-66px)] overflow-hidden">
+        <Image
+          src={flare}
+          alt="flare"
+          width={700}
+          height={700}
+          className="absolute top-44 -left-24 md:-bottom-52 -z-20 md:-right-64 opacity-50"
+        />
         <div className="flex flex-col md:flex-row md:items-center gap-0 md:gap-8">
           {/* flex one */}
           <div
