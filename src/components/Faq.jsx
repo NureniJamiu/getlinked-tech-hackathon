@@ -1,7 +1,7 @@
 import React from "react";
 
 import sectionImage from "../../public/faq-guy.png";
-import whiteStar from "../../public/star-white.png";
+import purpleStar from "../../public/star-purple-light.png";
 
 import {
   Accordion,
@@ -100,11 +100,11 @@ const Faq = () => {
             height={500}
           />
           <Image
-            src={whiteStar}
+            src={purpleStar}
             width={12}
             height={12}
             alt="purple star"
-            className="absolute top-32 left-0"
+            className="absolute top-0 left-44 md:left-64 animate-pulse"
           />
           <div className="hidden md:block big-circle-gradient absolute w-32 h-32 top-20 right-20 -z-10 rounded-full"></div>
         </div>

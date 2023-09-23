@@ -34,8 +34,8 @@ const Rules = () => {
             src={whiteStar}
             width={12}
             height={12}
-            alt="purple star"
-            className="absolute top-32 left-0"
+            alt="white star"
+            className="absolute top-32 left-0 md:top-80 animate-ping"
           />
           <div className="hidden md:block big-circle-gradient absolute w-32 h-32 top-20 right-20 -z-10 rounded-full"></div>
         </div>

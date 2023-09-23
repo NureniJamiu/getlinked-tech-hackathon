@@ -44,9 +44,8 @@ const Hero = () => {
           alt="flare"
           width={500}
           height={500}
-          className="hidden absolute lg:-top-8 lg:-right-8 opacity-50"
-          data-aos="fade-right"
-          data-aos-duration="1000"
+          className="hidden absolute lg:-top-44 lg:-right-8 opacity-50"
+          data-aos="fade-up"
         />
         {/* flex one  */}
         <div className="flex-1 w-full text-center md:text-left lg:pl-28">
@@ -88,9 +87,8 @@ const Hero = () => {
                 />
                 <Star
                   name={whiteStar}
-                  size={16}
-                  posOne="-top-10"
-                  posTwo="left-20"
+                  size={10}
+                  className="left-28 -top-12 animate-ping"
                 />
               </div>
             </div>
@@ -103,7 +101,11 @@ const Hero = () => {
               <Button className="btn-gradient rounded px-12 py-6 my-6 md:w-44">
                 Register
               </Button>
-              <Star name={grayStar} size={8} posOne="top-10" posTwo="right-0" />
+              <Star
+                name={grayStar}
+                size={8}
+                className="top-10 right-0 md:top-20 md:-right-20 animate-ping"
+              />
             </div>
 
             <div className="font-unica text-5xl mt-5 md:mt-10 lg:mx-0 text-center md:text-6xl w-72 lg:text-left mx-auto">
