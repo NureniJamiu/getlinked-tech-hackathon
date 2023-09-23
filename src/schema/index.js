@@ -1,23 +1,25 @@
 import * as yup from "yup";
 
 export const contactUsSchema = yup.object().shape({
-  name: yup.string().required("Name is a required field"),
+  first_name: yup.string().required("Name is a required field"),
   email: yup
     .string()
     .email("Please enter a valid email")
     .required("Email is a required field"),
-  topic: yup.string().required("This field is required"),
   message: yup.string().required("This field is required"),
 });
 
 export const registrationSchema = yup.object().shape({
-  name: yup.string().required("Name is a required field"),
-  phone: yup.number().required("Phone is a required field"),
+  team_name: yup.string().required("Name is a required field"),
+  phone_number: yup.number().required("Phone is a required field"),
   email: yup
     .string()
     .email("Please enter a valid email")
     .required("Email is a required field"),
-  topic: yup.string().required("This field is required"),
-  category: yup.string().required("This field is required"),
-  size: yup.string().required("This field is required"),
+  project_topic: yup.string().required("This field is required"),
+  category: yup.number().required("This field is required"),
+  group_size: yup.number().required("This field is required"),
+  privacy_policy_accepted: yup
+    .bool()
+    .oneOf([true], "You need to agree to the terms and conditions"),
 });
