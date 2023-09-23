@@ -8,20 +8,20 @@ import Image from "next/image";
 import menu from "../../public/Vector.png";
 import flare from "../../public/purple-flare.png";
 
-const Navbar = () => {
+const Navbar = ({ className }) => {
   const [toggle, setToggle] = useState(false);
 
   const links = [
     { title: "Timeline", url: "#" },
     { title: "Overview", url: "#" },
     { title: "FAQs", url: "#" },
-    { title: "Contact", url: "/contact-us" },
+    { title: "Contact", url: "/contact" },
   ];
 
   const handleToggle = () => setToggle(!toggle);
   return (
     <nav
-      className="relative px-10 md:px-20 lg:px-28 py-5 md:py-3 border-b border-zinc-700 mx-auto"
+      className={`relative px-10 md:px-20 lg:px-28 py-5 md:py-3 border-b border-zinc-700 mx-auto ${className}`}
       data-aos="fade-down"
       data-aos-duration="1000"
     >
