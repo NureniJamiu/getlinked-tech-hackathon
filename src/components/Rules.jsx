@@ -25,7 +25,7 @@ const Rules = () => {
         alt="flare"
         width={500}
         height={500}
-        className="absolute bottom-20 -right-60 md:-bottom-52 -z-20 md:-right-80 opacity-50"
+        className="absolute bottom-20 -right-60 md:-bottom-52 -z-20 md:-right-80 opacity-50 overflow-hidden"
       />
       <div className="flex flex-col md:flex-row-reverse md:items-center gap-8 md:16">
         <div className="md:flex-1 relative">

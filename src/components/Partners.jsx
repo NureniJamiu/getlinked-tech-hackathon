@@ -6,7 +6,7 @@ import flare from "../../public/purple-flare.png";
 
 const Partners = () => {
   return (
-    <section className="relative px-10 md:px-20 lg:px-28 py-20 border-b border-zinc-700">
+    <section className="relative px-10 md:px-20 lg:px-28 py-20 border-b border-zinc-700 overflow-hidden">
       <Image
         src={flare}
         alt="flare"

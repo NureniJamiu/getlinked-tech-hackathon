@@ -14,7 +14,7 @@ import Image from "next/image";
 
 const Faq = () => {
   return (
-    <section className="px-10 md:px-20 lg:px-28 py-12 border-b border-zinc-700">
+    <section className="px-10 md:px-20 lg:px-28 py-12 border-b border-zinc-700 overflow-hidden">
       <div className="flex flex-col md:flex-row md:items-center gap-5 md:gap-12 text-center md:text-left">
         <div className="flex-1">
           <div>

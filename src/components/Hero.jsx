@@ -34,7 +34,7 @@ const Hero = () => {
   const seconds = timeLeft % 60;
   return (
     <section
-      className="relative border-b border-zinc-700"
+      className="relative border-b border-zinc-700 overflow-hidden"
       data-aos="fade-up"
       data-aos-duration="1000"
     >

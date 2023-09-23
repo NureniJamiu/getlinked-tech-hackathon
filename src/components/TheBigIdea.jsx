@@ -9,7 +9,7 @@ import Subheader from "./Subheader";
 const TheBigIdea = () => {
   return (
     <section
-      className="text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 py-8"
+      className="text-center px-10 md:px-20 lg:px-28 border-b border-zinc-700 py-8 overflow-hidden"
       data-aos="fade-up"
       data-aos-duration="1500"
     >
