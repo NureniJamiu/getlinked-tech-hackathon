@@ -17,6 +17,7 @@ const ContactForm = () => {
     first_name: "",
     email: "",
     message: "",
+    phone_number: "",
   };
 
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
@@ -34,7 +35,7 @@ const ContactForm = () => {
   return (
     <>
       <form onSubmit={handleSubmit} className="w-72">
-        {["first_name", "email"].map((fieldName) => (
+        {["first_name", "email", "phone_number"].map((fieldName) => (
           <div key={fieldName} className="mt-6">
             <input
               type={fieldName === "email" ? "email" : "text"}
